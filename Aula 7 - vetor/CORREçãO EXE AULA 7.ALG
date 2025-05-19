@@ -1,35 +1,34 @@
 Algoritmo "correção aula 7 - vetor"
 
 Var
-numero, contador : inteiro
-// vetor <-subdivis?o com numeros indice)
-numeros : vetor[1..10] de inteiro
 
-produtos : vetor[1..5] de caractere
+nomeMercadoria : vetor[1..3] de caractere
+valorMercadoria : vetor[1..3] de real
+i : inteiro
 
 Inicio
-numeros [3] <- 3
-
-produtos[1] <- "Perfume"
-produtos[2] <- "Caf?"
-produtos[3] <- "Sabonete"
-produtos[3] <- "Cebola"
-produtos[5] <- "Batata"
-
-escreval ("Digite o c?digo do produto")
-leia (numero)
-
-escreval ("Produto ",produtos[numero]," selecionado!")
-
-
-
-//para contador<-1 te 10 faca
-   //leia (numeros [contador])
-//fimPara
-
-
-para contador <- 1 ate 10 faca
-   leia(numeros [contador])
+// entrada
+// nome e valor mercadoria
+ 
+para i<- 1 ate 3 faca
+   escreval("Digite o nome da mercadoria ",i,"º")
+   leia(nomeMercadoria[i])
+   escreval("Digite o valor do produto ",nomeMercadoria[i])
+   leia (valorMercadoria[i])
+   limpaTela
 fimPara
+
+// saida
+// apresente o nome / valor de cada mercadoria
+//escreval9nome," - ", valor)
+
+limpaTela
+escreval ("*** CATALOGO ***")
+para i <- 1 ate 3 faca
+  escreval(i," º - ", nomeMercadoria [i])
+  escreval("R$ : "< valorMercadoria[i])
+fimPara
+
+
 
 Fimalgoritmo
