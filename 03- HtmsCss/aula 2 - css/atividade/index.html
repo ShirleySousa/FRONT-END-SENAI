@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula css</title>
+    <style>
+        /* SELETOR VIA ALL(*) (SELECIONA TUDO) */
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* SELETOR VIA TAG */
+        h1 {
+            /* font-size - tamanho da fonte */
+            font-size: 40pt;
+        }
+
+        body {
+            /* background-color - cor de fundo */
+            background-color: rgb(241, 215, 185);
+            /* text-align - alinhamento do texto */
+            text-align: center;
+        }
+
+        /* SELETOR VIA CLASS (PODEM VARIOS ELEMENTOS) */
+        .paragrafo {
+            /* color - cor de texto */
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+        }
+
+        /* SELETOR VIA ID (PODE SOMENTE 1) */
+        #palavra1 {
+            font-style: italic;
+        }
+
+
+        #caixa {
+            /* width - largura */
+            width: 400px;
+            /* height - altura */
+            height: 400px;
+            /* border-radius - arredondar */
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+    </style>
+</head>
+
+<!-- autoidentação - alt + shift + f -->
+<!-- quebra de linha (apenas visual) - alt + z -->
+
+<body>
+    <h1>Esporte</h1>
+    <h1 style="color: rgb(61, 1, 1);">ATLETISMO</h1>
+    <p class="paragrafo">Atletismo é o conjunto de esportes formado por três modalidades: corrida, lançamentos e saltos.
+        O atletismo nasceu na Grécia, onde foram criados os estádios para realização das corridas a pé. Foi na Grécia
+        também que houve o primeiro registro de uma competição de atletismo, durante as Olimpíadas realizadas em 776
+        a.C..
+        <span id="palavra1">O aquecimento para atletismo é crucial para prevenir lesões, melhorar o desempenho e
+            preparar o corpo para os esforços. Ele envolve movimentos dinâmicos, exercícios de mobilidade e exercícios
+            de ativação muscular.
+    </p>
+    <p class="paragrafo">As modalidades de corrida no atletismo podem ser divididas em provas rasas, com barreiras, com
+        obstáculos e de revezamento. As provas rasas incluem distâncias como 100m, 200m e 400m. As provas com barreiras
+        e obstáculos incluem 110m/400m com barreiras e 3000m com obstáculos, respectivamente. As provas de revezamento,
+        como 4x100m e 4x400m, envolvem equipes de atletas que revezam um bastão.
+    <p class="paragrafo">No atletismo, é crucial cuidar do corpo antes, durante e após os treinos e competições. Isso
+        inclui um planejamento adequado, aquecimento e alongamento corretos, hidratação, alimentação equilibrada, uso de
+        equipamentos adequados, descanso e recuperação.
+
+
+        <br>
+        <br>
+
+        <img width="500px" src="atletismo.jpg"> 
+
+
+</body>
+
+</html>
