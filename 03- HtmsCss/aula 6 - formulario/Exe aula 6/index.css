@@ -1,0 +1,62 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#pagina {
+    width: 500px;
+    height: auto;
+    margin: 0px auto;
+}
+
+img {
+    width: 100%
+}
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+
+table {
+    border-collapse: collapse;
+    height: auto;
+    width: 100%;
+    margin: 20px auto;
+    border: 1px;
+}
+
+th,
+td {
+    border: 1px solid black;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+    height: 40px;
+}
+
+#btnCalc {
+    margin-left: 160px;
+    height: 40px;
+    width: 30%;
+    background-color: rgba(2, 172, 172, 255);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#resposta {
+    color: rgb(7, 81, 56);
+    margin: 20px 0px;
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

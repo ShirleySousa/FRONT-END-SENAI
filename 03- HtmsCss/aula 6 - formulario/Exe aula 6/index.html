@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Salário Família </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="imagens/previdencialogo.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+    <main>
+        <div id="pagina">
+            <div id="bannerTopo">
+                <img src="imagens/salario-familia.jpg" alt="Banner">
+            </div>
+            <form action="">
+                <input type="text" placeholder="Empregado" id="empregado">
+                <input type="number" placeholder="Quantidade de filhos menores de 14 anos ou inválidos" id="filhos">
+                <input type="number" placeholder="Salário Contribuição" id="salario">
+            </form>
+            <table id="tabelaSalario">
+                <thead>
+                    <tr>
+                        <th>Salário Contribuição</th>
+                        <th>Cota do Salário Família</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Até R$860,80</td>
+                        <td>R$ 41,37 por filho</td>
+
+                    </tr>
+                    <tr>
+                        <td>Entre R$860,80 e R$ 1.212,64</td>
+                        <td>R$ 29,16 por filho</td>
+
+                    </tr>
+                    <tr>
+                        <td>Mais de R$ 1.212,64</td>
+                        <td>Não há</td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="formGroup">
+                <button type="button" id="btnCalc">Calcular</button>
+                <br><br><br>
+                <span id="resposta"></span>
+            </div>
+        </div>
+    </main>
+    <script src="js/scripts.js"></script>i
+</body>
+
+</html>
