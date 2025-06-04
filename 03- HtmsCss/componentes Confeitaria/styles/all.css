@@ -1,0 +1,39 @@
+* {
+    margin: 0%;
+    padding: 0%;
+
+}
+
+#boloGrupo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    gap: 20px
+
+
+}
+
+
+.fotoBolo{
+    width: 80%;
+    height: 10px;
+background-color: aliceblue;
+background-image:aurl("../");
+background-size: cober;
+
+}
+   
+     
+
+
+
+.bolo{
+width: 300px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color:cadetblue ;
+
+}
