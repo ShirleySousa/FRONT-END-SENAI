@@ -6,75 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confeitaria</title>
     <link rel="stylesheet" href="styles/all.css">
-</head>
+    
+ </head>
 
 <body>
+    <header>
+        <div id="logo"></div>
 
-    <body>
-        <header>
+        <nav>
 
-            <div id="logo"></div>
+            <a href="index.html">Home</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
 
-            <nav>
+        </nav>
+    </header>
+    <main>
+        <!-- SEÇÃO PROMOÇÕES -->
+        <section id="Bem">
+            <h2>PROMOÇÃO</h2>
+            <div id="gruposobremesa">
 
-                <a href="index.html">Home</a>
-                <a href="#">Catálogo</a>
-                <a href="#">Sobre Nós</a>
-                <a href="#">Contato</a>
-
-            </nav>
-        </header>
-        <main>
-            <!-- SEÇÃO PROMOÇÕES -->
-            <section id="promoção">
-                <h2>PROMOÇÃO</h2>
-                <div id="grupoDoces">
-
-                    <div class="Doces">
-                        <img src="imagens/Bolos.jpg" alt="Bolos Deliciosos">
-                        <h4>CARRO ESPORTIVO</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
-                            accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit
-                            ratione
-                            modi
-                            neque! Reprehenderit, repellat.</p>
-                        <h5>R$ 10,00</h5>
-                        <button>VER MAIS</button>
-                    </div>
-                    <div class="Doces">
-                        <img src="imagens/Cupcake.jpg" alt="Cupcakes Deliciosos">
-                        <h4>CARRO VERMELHO</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
-                            accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit
-                            ratione
-                            modi
-                            neque! Reprehenderit, repellat.</p>
-                        <h5>R$ 9,50</h5>
-                        <button>VER MAIS</button>
-                    </div>
-                    <div class="Doces">
-                        <img src="imagens/Doces.jpg" alt="Doces Deliciosos">
-                        <h4>CARRO PRATA</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
-                            accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit
-                            ratione
-                            modi
-                            neque! Reprehenderit, repellat.</p>
-                        <h5>R$ 8,50</h5>
-                        <button>VER MAIS</button>
-                    </div>
-
+                <div class="sobremesa">
+                    <img src="imagens/Bolo.jpg" alt="Bolo">
+                    <h4>Bolo Decorado</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
+                        accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit ratione
+                        modi
+                        neque! Reprehenderit, repellat.</p>
+                    <h5>R$ 100,00</h5>
+                    <button>VER MAIS</button>
                 </div>
+                <div class="sobremesa">
+                    <img src="imagens/Brigadeiros.png" alt="Brigadeiro">
+                    <h4>Brigadeiro</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
+                        accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit ratione
+                        modi
+                        neque! Reprehenderit, repellat.</p>
+                    <h5>R$ 80,00</h5>
+                    <button>VER MAIS</button>
+                </div>
+                <div class="sobremesa">
+                    <img src="imagens/Cupcake.jpg" alt="Cupcake">
+                    <h4>Cupcake Decorado</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus itaque esse numquam iusto
+                        accusamus consectetur officia? Molestiae accusamus nemo ad nobis itaque ullam non velit ratione
+                        modi
+                        neque! Reprehenderit, repellat.</p>
+                    <h5>R$ 95,00</h5>
+                    <button>VER MAIS</button>
                 </div>
 
-                <section></section>
+            </div>
+            </div>
+
+            <section></section>
 
 
-        </main>
+    </main>
 
-        <footer></footer>
+    <footer></footer>
+
+    </tr>
+        </table>
+    </section>
+    <section id="pseudo">
+        <input placeholder="Olá" type="text">
+        <div id="caixa">
+            
+        </div>
+    </section>
+    <!-- table - puxa tabela -->
+    <!-- th - 'table heading', titulo da tabela -->
+    <!-- td - 'table data', dados da tabela -->
+    <!-- tr - 'table row', linha da tabela -->
+    <!-- thead, tbody , tfoot - mesma organização do html padrão, sendo cabecalho, corpo e rodape-->
+    <!-- colspan , rowspan - mesclar colunas ou linhas -->
+    <section id="tabelaCompleta">
+        <table>
+            <thead>
+                <tr>
+                    <th>/</th>
+                    <th>NOME</th>
+                    <th>TIPO</th>
+                    <th>VALOR</th>
+                    <th>PESO</th>
+                </tr>       
+            </thead>
+
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>Bolo</td>
+                    <td>Chocolate</td>
+                    <td>R$ 7,99</td>
+                    <td>150g</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Cupcake</td>
+                    <td>Morango</td>
+                    <td>R$ 7,99</td>
+                    <td>150g</td>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <td>Doces</td>
+                    <td>Diversos</td>
+                    <td>R$ 7,99</td>
+                    <td>150g</td>
+                </tr>
+                
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th colspan="3">SUBTOTAL</th>
+                    <td>R$ 23,97</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div id="espaco"></div>
 
 
-    </body>
+</body>
 
 </html>
