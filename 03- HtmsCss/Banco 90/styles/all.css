@@ -1,0 +1,121 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto",Arial,sans-serif;
+
+    :root{
+        --corPrimaria : rgb(0, 149, 255) ;
+        --design: rgb(255 , 255 , 0) ;
+        --fontePrincipal : 'verdana' ;
+        --tamanhoFonte : 14pt;
+        --postTamanho : 300px;
+    }
+}
+
+#colors{
+    background-color: #302727;
+    background-color: #ba2d2d;
+    background-color: #f2511b;
+    background-color: #f2861b;
+    background-color: #c7c730;
+}
+
+.pagamento{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.069);
+    border-radius: 5px;
+    box-shadow: rgba(153, 153, 153, 0.697) 5px 5px 10px;
+}
+
+#pagamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.Boleto{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.Cartão{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.Dinheiro{
+    border-radius: 5px;
+    width: 100%;
+}
+
+#grupoPagamento{
+    display: flex;
+    margin: 20px 0px;
+    gap: 30px;
+}
+
+header,
+footer {
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(241, 70, 8);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+a{
+    color: orangered;
+    text-decoration: none;
+    background-color: white ;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#logo {
+    width: 40px;
+    height: 40px;
+    background-color: slategrey;
+}
+
+#Forma{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 0px;
+}
+
+.carro{
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.069);
+    border-radius: 5px;
+    box-shadow: rgba(153, 153, 153, 0.697) 5px 5px 10px;
+}
+
+.carro img{
+    border-radius: 5px;
+    width: 100%;
+}
+
+#grupoCarros{
+    display: flex;
+    margin: 20px 0px;
+    gap: 30px;
+}
+
