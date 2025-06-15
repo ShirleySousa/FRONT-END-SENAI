@@ -1,0 +1,38 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", Arial, sans-serif
+}
+:root{
+    --corPrimaria : rgb(0, 149, 255) ;
+    --design: rgb(255 , 255 , 0) ;
+    --fontePrincipal : 'verdana' ;
+    --tamanhoFonte : 14pt;
+    --postTamanho : 300px;
+}
+
+header,
+footer {
+
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(153, 30, 8);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav {
+    display: flex;
+    align-items:flex-start;
+    gap: 30px;
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
