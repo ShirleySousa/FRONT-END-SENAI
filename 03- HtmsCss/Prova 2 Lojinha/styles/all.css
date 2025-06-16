@@ -1,0 +1,23 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header,footer{
+    /* height: 80px ; */
+    /* padding - espaçamento interno */
+    /* margin - espaçamento externo */
+    /* x : 10px (todos os lados)*/
+    /* x : 10px 10px(eixo y,cima,baixo / eixo x,esquerda direita)*/
+    /* x : 10px 10px 10px 10px (cima,direita,baixo,esquerda) relogio */
+    /* padding: 20px 10px 5px 15px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 15px; */
+    width: 100% ;
+    padding: 30px 0px;
+    text-align: left;
+    background-color: rgb(192, 109, 0);
+}

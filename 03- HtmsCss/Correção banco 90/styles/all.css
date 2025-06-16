@@ -15,6 +15,7 @@
 }
 
 th{
+<<<<<<< HEAD
     background-color: #ba2d2d!important;
     padding: 5px!important;
     color: white!important;
@@ -22,4 +23,8 @@ th{
 
 th:empty{
     background-color: transparent!important;
+=======
+    background-color: brown !important;
+    padding: 0% 5px !important;
+>>>>>>> 0074b54402f4f529d87c5b48eefdf13d9a3cfda1
 }
