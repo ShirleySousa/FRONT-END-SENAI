@@ -4,6 +4,29 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+ header {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center
+         
+    }
+
+    header img {
+      height: 50px;
+      object-fit: cover;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007BFF;
+    }
+
 header,footer{
     /* height: 80px ; */
     /* padding - espaçamento interno */
@@ -21,3 +44,4 @@ header,footer{
     text-align: left;
     background-color: rgb(192, 109, 0);
 }
+
