@@ -1,6 +1,16 @@
 * {
     padding: 0%;
     margin: 0%;
+<<<<<<< HEAD
+    font-family: "Roboto", Arial, sans-serif
+}
+:root{
+    --corPrimaria : rgb(0, 149, 255) ;
+    --design: rgb(255 , 255 , 0) ;
+    --fontePrincipal : 'verdana' ;
+    --tamanhoFonte : 14pt;
+    --postTamanho : 300px;
+=======
     font-family: "Roboto", Arial, sans-serif;
 
     :root {
@@ -95,19 +105,37 @@ ul {
     display: flex;
     margin: 20px 0px;
     gap: 30px;
+>>>>>>> a8206fa57d3a46b2f3d2783c086aeb61bf84590d
 }
 
 header,
 footer {
+<<<<<<< HEAD
+
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(153, 30, 8);
+=======
     width: 100%;
     padding: 10px 0px;
     background-color: #ba2d2d;
+>>>>>>> a8206fa57d3a46b2f3d2783c086aeb61bf84590d
     display: flex;
     justify-content: space-around;
 }
 
 nav {
     display: flex;
+<<<<<<< HEAD
+    align-items:flex-start;
+    gap: 30px;
+}
+
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+=======
     align-items: center;
     gap: 20px;
 }
@@ -116,10 +144,14 @@ a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     background-color: #ba2d2d;
+>>>>>>> a8206fa57d3a46b2f3d2783c086aeb61bf84590d
     padding: 10px;
     border-radius: 5px;
 }
 
+<<<<<<< HEAD
+
+=======
 #colors {
     background-color: #302727;
     background-color: #ba2d2d;
@@ -127,3 +159,4 @@ a {
     background-color: #f2861b;
     background-color: #c7c730;
 }
+>>>>>>> a8206fa57d3a46b2f3d2783c086aeb61bf84590d
