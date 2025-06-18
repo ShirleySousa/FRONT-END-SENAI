@@ -1,0 +1,113 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #ccc;
+      padding: 10px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      display: flex;
+      align-items: center;
+    }
+    header .logo div {
+      width: 40px;
+      height: 40px;
+      background: #ffffff00;
+      margin-right: 10px;
+    }
+    .login-link {
+      font-size: 14px;
+    }
+
+    .banner {
+      background: #bbb;
+      height: 300px;
+      margin: 20px 5%;
+    }
+
+    .melhores-produtos {
+      margin: 40px 5%;
+    }
+    .melhores-produtos h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .melhores-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .melhores-grid .box {
+      background: #ccc;
+      height: 200px;
+    }
+
+    .categorias-produtos {
+      display: flex;
+      margin: 40px 5%;
+      gap: 40px;
+    }
+    .categorias {
+      flex: 1;
+    }
+    .categorias h3 {
+      margin-bottom: 10px;
+    }
+    .produtos {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .produto {
+      background: #eee;
+      text-align: center;
+      padding: 10px;
+    }
+    .produto .imagem {
+      background: #ccc;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .explore {
+      margin: 40px 5%;
+      text-align: center;
+    }
+    .explore h2 {
+      margin-bottom: 20px;
+    }
+    .explore-cards {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .explore-card {
+      background: #ccc;
+      flex: 1;
+      padding: 20px;
+    }
+
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    footer div {
+      margin-bottom: 10px;
+    }
+    .footer-center {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+    }

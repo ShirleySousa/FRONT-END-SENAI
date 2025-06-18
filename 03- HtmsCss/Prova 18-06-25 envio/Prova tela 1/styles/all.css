@@ -1,0 +1,103 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background: #ccc;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+    }
+    header img {
+      width: 40px;
+      height: 40px;
+      background: #ffffff00;
+      margin-right: 10px;
+    }
+    header span {
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 10%;
+    }
+
+    .imagem-login {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.imagem-login img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* ou "contain" se quiser mostrar tudo da imagem */
+  border-radius: 10px; /* opcional */
+}
+    .imagem-login {
+      width: 50%;
+      background: #ccc;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .login-form {
+      width: 40%;
+      text-align: center;
+    }
+    .login-form h2 {
+      margin-bottom: 20px;
+    }
+    .login-form input {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    .login-form button {
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .login-form a {
+      color: #6a0dad;
+      text-decoration: none;
+    }
+    .divider {
+      margin: 20px auto;
+      width: 80%;
+      border-bottom: 1px solid #000;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-size: 14px;
+    }
+    footer div {
+      margin: 10px 0;
+    }
+    footer a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .rodape-center {
+      text-align: center;
+      width: 100%;
+      margin-top: 10px;
+    }

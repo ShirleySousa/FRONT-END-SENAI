@@ -1,0 +1,112 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      display:flex;
+      align-items: first baseline;
+      gap: 15px;
+    }
+
+    header img {
+      height: 50px;
+    }
+
+    header h1 {
+      font-size: 27px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      background-color: #fff;
+    }
+
+    .image-section img {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .login-form {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
+
+    .login-form h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .login-form label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .login-form .links {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+
+    .login-form .links a {
+      color: #004080;
+      text-decoration: none;
+    }
+
+    .login-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: #004080;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      font-size: medium;
+      margin-top: 10px;
+      font-size: 50px 2;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }

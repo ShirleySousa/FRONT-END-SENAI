@@ -1,0 +1,116 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      background-color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      vertical-align: middle;
+    }
+
+    header span {
+      font-size: 18px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .imagem conteudo {
+      width: 50%;
+      background-color: #ccc;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      width: 30%;
+      padding: 30px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .login-box .forgot {
+      font-size: 12px;
+      text-align: right;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 10px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .login-box .signup {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .login-box .signup a {
+      color: purple;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      font-size: 14px;
+    }
+
+    footer div {
+      max-width: 300px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    .copyright {
+      text-align: center;
+      background-color: #222;
+      color: #aaa;
+      padding: 10px;
+      font-size: 13px;
+    }
