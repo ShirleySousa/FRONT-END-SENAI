@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- correcao1 -->
+    <div>
+    <h2>Abrir um endereço digitado</h2>
+        <input type="text" id="url" placeholder="Digite o endereço">
+        <button onclick="correcao1()">Ir</button>
+    </div>
+
+    <!-- correcao2 -->
+    <div>
+        <h2>Lista com links</h2>
+        <select onchange="correcao2(this.value)">
+            <option value="">Selecione um site</option>
+            <option value="https://www.globo.com">Globo</option>
+            <option value="https://www.terra.com.br">Terra</option>
+            <option value="https://www.uol.com.br">UOL</option>
+        </select>
+    </div>
+
+
+    <!-- correcao3 -->
+    <div>
+        <h2>Validação de login</h2>
+        <input type="text" id="usuario" placeholder="Usuário">
+        <input type="password" id="senha" placeholder="Senha"><br>
+        <button onclick="correcao3()">Entrar</button>
+    </div>
+
+    <!-- correcao4 -->
+    <div>
+        <h2>Cálculo com desconto ou acréscimo</h2>
+        <input type="number" id="valorCompra" placeholder="Valor">
+        <br>
+        <label><input type="radio" name="tipo" value="vista" onclick="correcao4()"> À Vista</label>
+        <label><input type="radio" name="tipo" value="prazo" onclick="correcao4()"> A Prazo</label>
+    </div>
+
+    <!-- correcao5 -->
+    <div>
+        <h2>Cálculo de diária com adicionais</h2>
+        <input type="number" id="diaria" placeholder="Valor da diária">
+        <input type="number" id="dias" placeholder="Quantidade de dias">
+        <br>
+        <label><input type="checkbox" class="extra" value="30"> Banheiro</label>
+        <label><input type="checkbox" class="extra" value="50"> Banheira</label>
+        <label><input type="checkbox" class="extra" value="20"> TV</label>
+        <label><input type="checkbox" class="extra" value="10"> Internet</label>
+        <br>
+        <button onclick="correcao5()">Calcular</button>
+    </div>
+
+
+    <!-- correcao6 -->
+    <div>
+        <h2>Comentário e nova janela</h2>
+        <textarea id="comentario" placeholder="Comente sobre a corrupção no Brasil"></textarea>
+        <br>
+        <button onclick="correcao6()">Enviar</button>
+    </div>
+
+    <!-- correcao7 -->
+    <div>
+        <h2>Cálculo percentual</h2>
+        <input type="number" id="valor" placeholder="Valor">
+        <input type="number" id="percentual" placeholder="Percentual" onblur="correcao7()">
+        
+       
+    </div>
+   
+
+    <script src="scripts/correcao.js"></script>
+</body>
+
+</html>
