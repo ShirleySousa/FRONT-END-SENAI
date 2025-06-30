@@ -2,6 +2,8 @@
     margin: 0%;
     padding: 0%;
 }
+/* FILHO */
+
 div{
 
 width: 300px;
@@ -12,6 +14,7 @@ padding: 10px;
 text-align: center;
 
 }
+/* PAI */
 body{
 
     width: 100%;
