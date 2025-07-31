@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amman Digital - Empreenda no Digital</title>
+  <link rel="stylesheet" href="all.css">
+  <style>
+    /* Animação fade-in */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="container fade-in">
+      <h1>Absorventes Ecológicos</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#Catálogo">Catálogo</a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Destaque -->
+  <section class="hero fade-in">
+    <div class="container">
+      <h2>Absorvente Ecológicos</h2>
+      <p>os absorventes reutilizáveis/Ecológicos são pura revolução! 🌈 Mais que uma combinação inteligente de tecidos, eles são um voto a favor de um futuro diferente. Sabia que até o momento já impedimos o descarte de 2.200 milhões de absorventes? Isso equivale a 3.200 toneladas de lixo! 😱. </p>
+    </div>
+  </section>
+
+  <!-- Bio Amman -->
+  <section id="sobre" class="bio container fade-in">
+    <h3>Como são feitos:</h3>
+    <p>E de quebra, saca só as vantagens:
+
+🩸 feitos com tecidos inteligentes, que são impermeáveis e super absorventes
+🪄 tem até opção de toque seco
+🍃 livres de químicos e hipoalergênicos
+🇧🇷 produzidos orgulhosamente no Brasil
+🌎 cada absorvente Korui impede o descarte de 300 absorventes descartáveis
+
+Vem fazer parte dessa galera incrível que tá transformando ciclos e o mundo! 🌱💖</p>
+  </section>
+
+  <!-- Posts -->
+      <article class="post">
+      <h3>Como limpar</h3>
+      <p>Remoção do excesso: Retire o excesso de resíduos do absorvente sob água corrente fria. 
+Deixar de molho: Deixe o absorvente de molho em água fria por 30 minutos. Se não for lavar imediatamente, troque a água a cada 12 horas para evitar odores. 
+Lavar: Lave o absorvente com sabão neutro, de preferência líquido, em água fria ou morna, como faria com roupas íntimas. 
+Enxaguar: Enxágue bem para remover todo o sabão. 
+Secar: Seque o absorvente ao sol para desinfetar e evitar manchas, ou use a secadora em temperatura baixa se preferir. </p>
+      
+    </article>
+
+    <article class="post">
+      <h3>Público Alvo</h3>
+      <p>Estudos recentes apontam que mulheres entre 11 e 25 anos são o público que mais se interessa por absorventes ecológicos. Esse dado reforça a demanda crescente por produtos sustentáveis entre jovens consumidoras, que buscam alternativas mais saudáveis e conscientes para o cuidado íntimo. Nossa marca atende exatamente a esse perfil: moderna, ecológica e pensada para quem faz escolhas com propósito.</p>
+      
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="fade-in">
+    <div class="container">
+      <p>&copy; 2025 Aurora Sustentavel. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Ativa o fade-in de forma progressiva
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.fade-in').forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+  </script>
+
+<h1>Loja de Produtos</h1>
+
+  <div class="produtos" id="lista-produtos">
+    <!-- Produtos serão inseridos pelo JavaScript -->
+  </div>
+
+  <script>
+    const produtos = [
+      { id: 1, nome: "Produto 1", descricao: "Descrição do produto 1", preco: "R$ 49,90", imagem: "https://via.placeholder.com/150" },
+      { id: 2, nome: "Produto 2", descricao: "Descrição do produto 2", preco: "R$ 59,90", imagem: "https://via.placeholder.com/150" },
+      { id: 3, nome: "Produto 3", descricao: "Descrição do produto 3", preco: "R$ 39,90", imagem: "https://via.placeholder.com/150" },
+      { id: 4, nome: "Produto 4", descricao: "Descrição do produto 4", preco: "R$ 29,90", imagem: "https://via.placeholder.com/150" },
+      { id: 5, nome: "Produto 5", descricao: "Descrição do produto 5", preco: "R$ 99,90", imagem: "https://via.placeholder.com/150" },
+      { id: 6, nome: "Produto 6", descricao: "Descrição do produto 6", preco: "R$ 19,90", imagem: "https://via.placeholder.com/150" },
+      { id: 7, nome: "Produto 7", descricao: "Descrição do produto 7", preco: "R$ 79,90", imagem: "https://via.placeholder.com/150" },
+      { id: 8, nome: "Produto 8", descricao: "Descrição do produto 8", preco: "R$ 109,90", imagem: "https://via.placeholder.com/150" },
+      { id: 9, nome: "Produto 9", descricao: "Descrição do produto 9", preco: "R$ 89,90", imagem: "https://via.placeholder.com/150" },
+      { id: 10, nome: "Produto 10", descricao: "Descrição do produto 10", preco: "R$ 69,90", imagem: "https://via.placeholder.com/150" },
+    ];
+
+    const container = document.getElementById('lista-produtos');
+
+    produtos.forEach(prod => {
+      const div = document.createElement('div');
+      div.className = 'produto';
+      div.innerHTML = `
+        <img src="${prod.imagem}" alt="${prod.nome}">
+        <h3>${prod.nome}</h3>
+        <p>${prod.descricao}</p>
+        <div class="preco">${prod.preco}</div>
+        <button class="btn" onclick="verMais('${prod.nome}')">Ver mais</button>
+      `;
+      container.appendChild(div);
+    });
+
+    function verMais(nome) {
+      alert("Você clicou em: " + nome);
+    }
+  </script>
+</body>
+</html>
+ 
