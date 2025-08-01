@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirley - Absorventes Ecológicos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ====== ANIMAÇÕES E EFEITOS ====== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ====== CARROSSEL ====== */
+    .carousel {
+      position: relative;
+      max-width: 100%;
+      overflow: hidden;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .carousel-images img {
+      width: 20%;
+      display: none;
+      transition: opacity 0.8s ease;
+    }
+
+    .carousel-images img.active {
+      display: block;
+    }
+
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+
+    .carousel-controls button {
+      background: rgba(0, 0, 0, 0.4);
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-controls button:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+
+    /* ====== ESTILOS ADICIONAIS PARA ARTIGOS ====== */
+    main article {
+      background-color: #c8e6c9;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    main article:hover {
+      transform: translateY(-5px);
+    }
+
+    main article a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #2e7d32;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    main article a:hover {
+      background-color: #1b5e20;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Cabeçalho do site -->
+  <header>
+    <div class="container fade-in">
+      <h1>Absorventes Ecológicos</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cuidados">Cuidados</a></li>
+          <li><a href="#curiosidades">Curiosidades</a></li>
+          <li><a href="#ondeencontrar">Onde encontrar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Seção principal com introdução -->
+  <section class="hero fade-in">
+    <div class="container">
+      <h2>Absorventes Ecológicos</h2>
+      <p>Os absorventes reutilizáveis são uma verdadeira revolução! Mais que uma combinação inteligente de tecidos, eles são um voto a favor de um futuro mais consciente. Já evitamos o descarte de mais de 2,2 bilhões de absorventes, o que representa cerca de 3.200 toneladas de lixo!</p>
+    </div>
+  </section>
+
+  <!-- Carrossel de imagens -->
+  <div class="carousel fade-in">
+    <div class="carousel-images">
+      <img src="imagem/3c26da9c653ea890557e5399caa8f552.jpeg" alt="Absorvente ecológico 1" class="active">
+      <img src="imagem/mais conforto.jpg" alt="Absorvente ecológico 2">
+      <img src="imagem/MAIS ECONOMIA.jpg" alt="Absorvente ecológico 3">
+    </div>
+    <div class="carousel-controls">
+      <button onclick="prevSlide()">&#10094;</button>
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </div>
+
+  <!-- Sobre os absorventes -->
+  <section id="sobre" class="bio container fade-in">
+    <h3>Como são feitos:</h3>
+    <p>Feitos com tecidos inteligentes impermeáveis e superabsorventes, com opções de toque seco. São livres de químicos e hipoalergênicos, produzidos no Brasil. Cada absorvente evita o uso de cerca de 300 descartáveis. Venha fazer parte da mudança!</p>
+  </section>
+
+  <!-- Seção principal com artigos -->
+  <main id="cuidados" class="container fade-in">
+    <article>
+      <h3>Cuidados com seu absorvente ecológico</h3>
+      <p>Você sabe como cuidar corretamente do seu absorvente e da sua saúde íntima? Aqui estão dicas essenciais para garantir higiene e durabilidade.</p>
+      <a href="cuidados.html">Leia mais</a>
+    </article>
+
+    <article id="curiosidades">
+      <h3>Curiosidades</h3>
+      <p>Sabia que um único absorvente reutilizável pode reduzir mais de 10 kg de lixo em apenas um ano? A sustentabilidade é real e eficaz!</p>
+      <a href="curiosidades.html">Leia mais</a>
+    </article>
+
+    <article id="ondeencontrar">
+      <h3>Onde encontrar</h3>
+      <p>Gostou dos benefícios? Acesse @Artes.da.Shirley para comprar o seu. Produtos acessíveis, de qualidade e que fazem bem para você e para o planeta.</p>
+      <a href="encontrar.html">Leia mais</a>
+    </article>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="fade-in">
+    <div class="container">
+      <p>&copy; 2025 Aurora Sustentável. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Fade-in progressivo por tempo
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll('.fade-in').forEach((el, index) => {
+        el.style.animationDelay = `${index * 0.2}s`;
+      });
+    });
+
+    // Carrossel simples com troca automática e manual
+    let currentIndex = 0;
+    const slides = document.querySelectorAll(".carousel-images img");
+
+    function showSlide(index) {
+      slides.forEach((img, i) => {
+        img.classList.remove("active");
+        if (i === index) img.classList.add("active");
+      });
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    setInterval(nextSlide, 4000); // Troca de imagem a cada 4 segundos
+  </script>
+</body>
+
+</html>
